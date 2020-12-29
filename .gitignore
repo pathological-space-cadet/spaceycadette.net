@@ -1,3 +1,9 @@
+# FSharpRelated
+.ionide/
+**/spaceycadette.net/obj
+**/spaceycadette.net/bin
+**/.fable
+
 # Logs
 logs
 *.log

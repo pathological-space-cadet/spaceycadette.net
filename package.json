@@ -11,12 +11,20 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "fs-watch": "mkdir -p ./src/components/ && fable watch --cwd ./src/spaceycadette.net/ -o ../components/ --run ./runDevelop.sh"
   },
   "dependencies": {
+    "autoprefixer": "^10.1.0",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-postcss": "^3.4.0",
+    "gatsby-source-filesystem": "^2.8.1",
+    "postcss": "^8.2.1",
+    "postcss-import": "^14.0.0",
+    "postcss-preset-env": "^6.7.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
     "prettier": "2.2.1"
