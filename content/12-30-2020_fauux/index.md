@@ -1,6 +1,9 @@
-# Fauux
-
-## Series Intro
+---
+path: "/neocities-fauux"
+publishedAt: "2020-12-30"
+title: "Faux"
+tags: ["articles"]
+---
 
 I think I have been coding for about three years now, maybe even longer. Ever since I graduated from a Front-end bootcamp, and I know that I have learned a lot since then. I have gone through learning different languages, frameworks, practices, concepts, and I don't regret anything I learned so far, but the one thing that I got into web development for, and the one thing that always really excited me was the ability to basically put a website together from nothing, and publish it for next to nothing. I would have complete creative freedom, could say whatever I wanted to say, make it look however I wanted it to look, and basically put together my own platforms at will. A lot of people in my field and position would be more interested in application development and in functionality, but honestly, my interests were always more content driven. I was always more interested in content and design, and how people used the website medium to create art, in essence, not necessarily for any purpose than expressing themselves.
 

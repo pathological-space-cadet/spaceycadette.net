@@ -1,5 +1,3 @@
-import React from "react"
+import "../css/styles.css"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+export { Home as default } from "../components/Home.fs"

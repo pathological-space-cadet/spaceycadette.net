@@ -1,3 +1,10 @@
+---
+path: "/prompt-magicians"
+title: "Writing Prompt: The Old Masters"
+publishedAt: "2020-12-30"
+tags: ["stories"]
+---
+
 > Two magicians made a blood oath when they were children that they would never harm each other. Now they are mortal enemies and have resorted to inconveniencing and annoying each other, knowing if they harm one another they'll die.
 
 Rumors online continually swirl the grove, and every year draw tens and sometimes hundreds of visitors to the twin villages near the grove site. But at the eye, the air is suffocatingly still; it is an air not meant for mortals polluted as it is with the stale mush of lost centuries, of old magicks and cantankerous hatred.

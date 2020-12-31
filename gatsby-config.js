@@ -10,17 +10,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "articles",
-        path: `${__dirname}/content/articles/`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "stories",
-        path: `${__dirname}/content/stories/`,
+        name: "content",
+        path: `${__dirname}/content/`,
       },
     },
     "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-transformer-remark",
+    },
+    "gatsby-plugin-catch-links",
   ],
 }
