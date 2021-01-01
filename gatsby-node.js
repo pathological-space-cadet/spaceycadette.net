@@ -36,6 +36,7 @@ async function paginate(tagName, { graphql, actions }) {
       path: `/${tagName}${currentPageNumberSlug}`, // attach current page number
       component: template,
       context: {
+        tagName,
         limit: NUMBER_OF_POSTS_PER_PAGE_IN_LIST_VIEW,
         skip: i * NUMBER_OF_POSTS_PER_PAGE_IN_LIST_VIEW,
         currentPageNumber,
@@ -52,7 +53,7 @@ async function createContentPages({ graphql, actions }) {
   const { errors, data } = await graphql(
     `
       {
-        allMarkdownRemark() {
+        allMarkdownRemark {
           nodes {
             id
             fields {
@@ -68,11 +69,11 @@ async function createContentPages({ graphql, actions }) {
     throw new Error("There was an error creating content pages.")
   }
 
-  const contentEdges = data.allMarkdownRemark.edges
+  const contentEdges = data.allMarkdownRemark.nodes
 
   contentEdges.forEach(e => {
-    const path = e.node.fields.slug
-    const id = e.node.id
+    const path = e.fields.slug
+    const id = e.id
 
     actions.createPage({
       path,
@@ -119,22 +120,27 @@ exports.createSchemaCustomization = ({ actions }) => {
       siteUrl: String
       social: Social
     }
+
     type Author {
       name: String
       summary: String
     }
+
     type Social {
       twitter: String
     }
+
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter
       fields: Fields
     }
+
     type Frontmatter {
       title: String
-      description: String
-      date: Date @dateformat
+      publishedAt: Date @dateformat
+      tags: [String]
     }
+
     type Fields {
       slug: String
     }

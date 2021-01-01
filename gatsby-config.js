@@ -19,5 +19,6 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
     },
     "gatsby-plugin-catch-links",
+    "gatsby-plugin-ramda",
   ],
 }

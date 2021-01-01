@@ -1,5 +1,4 @@
 ---
-path: "/neocities-fauux"
 publishedAt: "2020-12-30"
 title: "Faux"
 tags: ["articles"]

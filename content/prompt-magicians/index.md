@@ -1,5 +1,4 @@
 ---
-path: "/prompt-magicians"
 title: "Writing Prompt: The Old Masters"
 publishedAt: "2020-12-30"
 tags: ["stories"]

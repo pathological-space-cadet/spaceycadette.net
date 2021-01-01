@@ -15,21 +15,26 @@
     "fs-watch": "mkdir -p ./src/components/ && fable watch --cwd ./src/spaceycadette.net/ -o ../components/ --extension '.fs.js' --run ./runDevelop.sh"
   },
   "dependencies": {
+    "@cherihung/eslint-config-gatsby": "^1.0.7",
     "autoprefixer": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-prettier": "^3.3.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-catch-links": "^2.7.0",
     "gatsby-plugin-postcss": "^3.4.0",
+    "gatsby-plugin-ramda": "^1.0.0",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-remark": "^2.13.1",
     "postcss": "^8.2.1",
     "postcss-import": "^14.0.0",
     "postcss-preset-env": "^6.7.0",
+    "ramda": "^0.27.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "^2.2.1"
   },
   "repository": {
     "type": "git",
