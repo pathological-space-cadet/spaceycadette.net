@@ -16,7 +16,7 @@ And so, it is with a mixture of excitement and jealousy that I started looking t
 
 ## Wired Sound for Wired People
 
-(Wired Sound For Wired People)[https://fauux.neocities.org] is the first one that I found and the first one that I'll cover. I found it having just rewatched _Serial Experiments Lain_ and looking for anything related to that.
+[Wired Sound For Wired People](https://fauux.neocities.org) is the first one that I found and the first one that I'll cover. I found it having just rewatched _Serial Experiments Lain_ and looking for anything related to that.
 
 This isn't a new site by any means, although it's still being updated, there was a new puzzle put up last month, which is evidently still waiting to be solved. And for that matter, I don't think that this is particularly obscure. It's one of the most popular on neocities for sure, and I think that quite a few people who enjoy SEL online are probably aware of this.
 
