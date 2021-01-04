@@ -5,8 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Gatsby.fs" />
     <Compile Include="Utils.fs" />
+    <Compile Include="Gatsby.fs" />
+    <Compile Include="Layout.fs" />
     <Compile Include="Home.fs" />
     <Compile Include="Content.fs" />
   </ItemGroup>

@@ -2,6 +2,7 @@
 module Home
 
 open Feliz
+open Fable.Core.JsInterop
 
 [<ReactComponent>]
 let HomeMenu () =
@@ -12,6 +13,10 @@ let HomeMenu () =
                                                  prop.text "Stories" ] ] ] ]
 
 [<ReactComponent>]
-let Home () =
-    Html.main [ Html.h1 "Spacey Cadette"
-                HomeMenu() ]
+let Home (props: obj) =
+    let home =
+        (Html.main [ Html.h1 "Spacey Cadette"
+                     HomeMenu() ])
+        |> Seq.singleton
+
+    Layout.Layout !!{| children = home |}

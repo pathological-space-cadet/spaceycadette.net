@@ -1,7 +1,7 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 
-const TAGS_FOR_WHICH_TO_CREATE_LIST_VIEWS = ["articles", "stories"]
+const TAGS_FOR_WHICH_TO_CREATE_LIST_VIEWS = ["articles", "stories", "tech"]
 const NUMBER_OF_POSTS_PER_PAGE_IN_LIST_VIEW = 12
 
 // List view pagination functionality based on Content tag

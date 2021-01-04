@@ -6,6 +6,8 @@ import { bind, map } from "./.fable/fable-library.3.0.0-nagareyama-rc-008/Option
 import { reactApi, reactElement } from "./components/.fable/Feliz.1.32.0/Interop.fs.js";
 import { createObj } from "./.fable/fable-library.3.0.0-nagareyama-rc-008/Util.js";
 import { LinkProps, Link } from "./Gatsby.fs.js";
+import { singleton as singleton_1 } from "./.fable/fable-library.3.0.0-nagareyama-rc-008/Seq.js";
+import { Layout } from "./Layout.fs.js";
 import { append } from "./.fable/fable-library.3.0.0-nagareyama-rc-008/Array.js";
 
 export class ContentPreview extends Record {
@@ -145,11 +147,17 @@ function ContentListView_contentListView(content) {
     }
 }
 
-export const ContentListView_ContentListView = (arg) => {
+export function ContentListView_ContentListView(props) {
+    let c;
+    let value;
     let content;
-    content = ContentListView_extractContentListData(arg);
-    return ContentListView_contentListView(content);
-};
+    content = ContentListView_extractContentListData(props);
+    value = ContentListView_contentListView(content);
+    c = singleton_1(value);
+    return Layout({
+        children: c,
+    });
+}
 
 function ContentView_extractContentData(props) {
     const pathFromPropsToNode = ["data", "allMarkdownRemark", "nodes", "0"];
@@ -222,9 +230,15 @@ function ContentView_contentView(content) {
     }
 }
 
-export const ContentView_ContentView = (arg) => {
+export function ContentView_ContentView(props) {
+    let c;
+    let value;
     let content;
-    content = ContentView_extractContentData(arg);
-    return ContentView_contentView(content);
-};
+    content = ContentView_extractContentData(props);
+    value = ContentView_contentView(content);
+    c = singleton_1(value);
+    return Layout({
+        children: c,
+    });
+}
 

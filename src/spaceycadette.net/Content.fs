@@ -2,6 +2,7 @@ module ContentList
 
 open Feliz
 open Fable.React
+open Fable.Core.JsInterop
 
 type ContentPreview =
     { Title: string
@@ -84,8 +85,14 @@ module ContentListView =
         | None -> Html.none
 
     [<ReactComponent>]
-    let ContentListView: obj -> ReactElement =
-        extractContentListData >> contentListView
+    let ContentListView (props: obj) =
+        let c =
+            props
+            |> extractContentListData
+            |> contentListView
+            |> Seq.singleton
+
+        Layout.Layout !!{| children = c |}
 
 module ContentView =
     // "Adapter function" for taking in JS land stuff and converting it into nice F# land data.
@@ -133,4 +140,14 @@ module ContentView =
         | None -> Html.none
 
     [<ReactComponent>]
-    let ContentView: obj -> ReactElement = extractContentData >> contentView
+    let ContentView (props: obj) =
+        // This is awkward, but passing props appears to be awkward in Fable.
+        // I am taking the props and calling using it to render the children
+        // and then pass this to the layout.
+        let c: ReactElement seq =
+            props
+            |> extractContentData
+            |> contentView
+            |> Seq.singleton
+
+        Layout.Layout !!{| children = c |}

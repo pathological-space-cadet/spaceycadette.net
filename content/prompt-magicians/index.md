@@ -1,7 +1,7 @@
 ---
 title: "Writing Prompt: The Old Masters"
 publishedAt: "2020-12-30"
-tags: ["stories"]
+tags: ["stories", "writing-prompt"]
 ---
 
 > Two magicians made a blood oath when they were children that they would never harm each other. Now they are mortal enemies and have resorted to inconveniencing and annoying each other, knowing if they harm one another they'll die.

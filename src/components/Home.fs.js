@@ -1,6 +1,8 @@
 import { reactApi, reactElement } from "./components/.fable/Feliz.1.32.0/Interop.fs.js";
 import { createObj } from "./.fable/fable-library.3.0.0-nagareyama-rc-008/Util.js";
 import { singleton, ofArray } from "./.fable/fable-library.3.0.0-nagareyama-rc-008/List.js";
+import { singleton as singleton_1 } from "./.fable/fable-library.3.0.0-nagareyama-rc-008/Seq.js";
+import { Layout } from "./Layout.fs.js";
 
 export function HomeMenu() {
     let elems, children, children_2, value_10;
@@ -12,12 +14,18 @@ export function HomeMenu() {
     return reactElement("ul", createObj(xs_2));
 }
 
-export function Home() {
+export function Home(props) {
+    let home;
+    let value_1;
     const children = ofArray([reactElement("h1", {
         children: ["Spacey Cadette"],
     }), HomeMenu()]);
-    return reactElement("main", {
+    value_1 = reactElement("main", {
         children: reactApi.Children.toArray(Array.from(children)),
+    });
+    home = singleton_1(value_1);
+    return Layout({
+        children: home,
     });
 }
 
